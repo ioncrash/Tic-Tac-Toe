@@ -1,6 +1,9 @@
 'use strict';
 
-let game = require('../board.js');
+// let game = require('../board.js');
+
+let board = ['','','','','','','','',''];
+let playerTurn = 'x';
 
 const sample = ["o","x","o",
                 "x","o","x",
@@ -31,10 +34,20 @@ const hasWon = function(board, move) {
   return false;
 };
 
+const changeTurn = function() {
+  if (playerTurn === 'x') {
+    playerTurn = 'o';
+  } else if (playerTurn === 'o') {
+    playerTurn = 'x';
+  } else {
+    debugger;
+  }
+};
+
 const playerMove = function(move) {
 
 };
 
-module.exports (
+module.exports {
   hasWon
-);
+};
