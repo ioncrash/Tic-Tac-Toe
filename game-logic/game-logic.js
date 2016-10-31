@@ -39,13 +39,13 @@ const changeTurn = function() {
     playerTurn = 'o';
   } else if (playerTurn === 'o') {
     playerTurn = 'x';
-  } else {
-    debugger;
   }
 };
 
 const playerMove = function(move) {
+  //get move (board index) from jquery
 
+  board[move] = playerTurn;
 };
 
 module.exports {
